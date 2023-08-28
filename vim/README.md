@@ -10,3 +10,26 @@ Let's break down what each line does:
 - `set ignorecase`: Makes searching case insensitive.
 - `set incsearch`: Enables incremental searching, so `vim` starts searching as you type.
 - `syntax enable`: Enables syntax highlighting.
+
+## Vim Plugins
+Install [Vim-Plug](https://github.com/junegunn/vim-plug)
+
+```bash
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Then install plugins from [Vim Awesome](https://vimawesome.com/). 
+
+#### Example installing Emmet
+
+Place this in your .vimrc:
+
+```
+Plug 'mattn/emmet-vim'
+```
+… then run the following in Vim:
+```
+:source %
+:PlugInstall
+```
